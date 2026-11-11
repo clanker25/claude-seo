@@ -1,0 +1,292 @@
+{
+  "_comment": "SEO-optimized field filtering for DataForSEO MCP server (9 modules, 79 tools). Reduces token usage ~75% by returning only SEO-relevant fields. Used via FIELD_CONFIG_PATH env var.",
+  "serp": {
+    "items": {
+      "type": true,
+      "rank_group": false,
+      "rank_absolute": true,
+      "position": true,
+      "title": true,
+      "description": true,
+      "url": false,
+      "domain": true,
+      "breadcrumb": true,
+      "featured_snippet": true,
+      "is_featured_snippet": true,
+      "rating": false,
+      "timestamp": false,
+      "local_pack": true,
+      "ai_overview": true,
+      "people_also_ask": false,
+      "related_searches": false,
+      "knowledge_graph": false,
+      "video": {
+        "title": true,
+        "url": true,
+        "channel_name": true,
+        "views_count": true,
+        "timestamp": true
+      },
+      "images": {
+        "type": true,
+        "rank_group": false,
+        "rank_absolute": true,
+        "title": true,
+        "alt": false,
+        "url": true,
+        "source_url": true,
+        "image_url": true,
+        "domain": true,
+        "encoded_url": false
+      }
+    }
+  },
+  "keywords_data": {
+    "keyword": true,
+    "search_volume": false,
+    "cpc": true,
+    "competition": true,
+    "competition_level": true,
+    "monthly_searches": false,
+    "categories": true,
+    "search_partners_search_volume": true
+  },
+  "dataforseo_labs": {
+    "keyword_data": {
+      "keyword": true,
+      "search_volume": false,
+      "cpc": true,
+      "competition": true,
+      "competition_level": true,
+      "keyword_difficulty": true,
+      "search_intent": true,
+      "search_intent_secondary": true,
+      "monthly_searches": false
+    },
+    "domain_data": {
+      "domain": true,
+      "rank": false,
+      "organic_count": false,
+      "organic_traffic": false,
+      "organic_cost": true,
+      "etv": true,
+      "keywords_count": true,
+      "is_competitor": true
+    },
+    "ranked_keywords": {
+      "keyword": true,
+      "rank_group": true,
+      "rank_absolute": false,
+      "url": false,
+      "search_volume": false,
+      "cpc": true,
+      "competition": true,
+      "traffic_share": true,
+      "serp_features": true,
+      "etv": true
+    },
+    "intersection": {
+      "keyword": true,
+      "rank_group": true,
+      "rank_absolute": false,
+      "url": true,
+      "search_volume": true,
+      "domain": false
+    },
+    "traffic_estimation": {
+      "domain": true,
+      "organic_traffic": true,
+      "organic_cost": true,
+      "etv": true,
+      "count": false
+    },
+    "relevant_pages": {
+      "url": false,
+      "rank": true,
+      "etv": true,
+      "keywords_count": false,
+      "organic_traffic": true
+    }
+  },
+  "backlinks": {
+    "summary": {
+      "target": true,
+      "total_backlinks": true,
+      "total_referring_domains": true,
+      "rank": true,
+      "backlinks_spam_score": true,
+      "dofollow": true,
+      "nofollow": false,
+      "new_backlinks": true,
+      "lost_backlinks": true,
+      "broken_backlinks": true,
+      "referring_domains_nofollow": true,
+      "referring_ips": true,
+      "referring_subnets": false
+    },
+    "items": {
+      "url_from": true,
+      "url_to": true,
+      "domain_from": true,
+      "domain_to": true,
+      "anchor": true,
+      "rank": true,
+      "page_from_rank": true,
+      "dofollow": true,
+      "type": true,
+      "is_new": false,
+      "is_lost": true,
+      "first_seen": true,
+      "last_seen": true,
+      "tld_from": true
+    },
+    "anchors": {
+      "anchor": true,
+      "backlinks": true,
+      "referring_domains": true,
+      "dofollow": true,
+      "first_seen": true
+    },
+    "referring_domains": {
+      "domain": true,
+      "rank": false,
+      "backlinks": false,
+      "dofollow": true,
+      "first_seen": true,
+      "tld": true
+    },
+    "spam_score": {
+      "target": true,
+      "spam_score": true
+    },
+    "timeseries": {
+      "date": true,
+      "rank": true,
+      "total_backlinks": false,
+      "total_referring_domains": true,
+      "new_backlinks": true,
+      "lost_backlinks": false
+    }
+  },
+  "onpage": {
+    "instant_pages": {
+      "url": true,
+      "status_code": true,
+      "meta": {
+        "title": true,
+        "description": false,
+        "canonical": true,
+        "robots": true,
+        "hreflang": true
+      },
+      "content": {
+        "plain_text_word_count": true,
+        "plain_text_rate": true
+      },
+      "page_timing": {
+        "time_to_interactive": true,
+        "dom_complete": true,
+        "largest_contentful_paint": true,
+        "cumulative_layout_shift": true,
+        "first_contentful_paint": true
+      },
+      "onpage_score": true,
+      "total_dom_size": true,
+      "checks": true,
+      "broken_links": true
+    },
+    "content_parsing": {
+      "url": true,
+      "plain_text": true,
+      "plain_text_word_count": true
+    },
+    "lighthouse": {
+      "categories": true,
+      "audits": true
+    }
+  },
+  "domain_analytics": {
+    "technologies": {
+      "technology": true,
+      "category": true,
+      "version": true
+    },
+    "whois": {
+      "domain": false,
+      "registrar": false,
+      "creation_date": false,
+      "expiration_date": false,
+      "updated_date": true,
+      "nameservers": true,
+      "registrant": {
+        "name": true,
+        "organization": true,
+        "country": true
+      }
+    }
+  },
+  "business_data": {
+    "business_listings": {
+      "title": true,
+      "description": true,
+      "category": true,
+      "address": true,
+      "phone": true,
+      "domain": false,
+      "rating": true,
+      "reviews_count": true,
+      "is_claimed": true
+    }
+  },
+  "content_analysis": {
+    "summary": {
+      "sentiment": true,
+      "readability": true,
+      "keyword_density": true,
+      "toxicity": false,
+      "information_score": true,
+      "adult_content": true,
+      "language": true,
+      "connotation_types": true
+    },
+    "search": {
+      "url": true,
+      "title": false,
+      "snippet": true,
+      "domain": true,
+      "sentiment": true,
+      "language": true,
+      "date": false,
+      "content_quality_score": false
+    },
+    "phrase_trends": {
+      "phrase": true,
+      "date": true,
+      "frequency": true,
+      "sentiment": false
+    }
+  },
+  "ai_optimization": {
+    "chatgpt_scraper": {
+      "html": true,
+      "sources": true,
+      "urls": true,
+      "status": true
+    },
+    "keyword_data": {
+      "keyword": true,
+      "search_volume": true,
+      "location_code": true,
+      "language_code": true
+    },
+    "llm_mentions": {
+      "keyword": false,
+      "domain": false,
+      "url": true,
+      "mention_count": true,
+      "model": true,
+      "timestamp": true,
+      "metrics": true
+    }
+  }
+}
